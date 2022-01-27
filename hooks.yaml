@@ -1,0 +1,6 @@
+- id: clj-kondo
+  name: clj-kondo
+  description: Run lint rules with clj-kondo
+  types: [clojure]
+  entry: hooks/clj-kondo-pre-commit
+  language: script
