@@ -3,7 +3,7 @@
 if ! command -v clj-kondo &> /dev/null
 then
     echo "clj-kondo could not be found. Please follow the installation instructions here https://github.com/clj-kondo/clj-kondo/blob/master/doc/install.md."
-    exit
+    exit 2
 fi
 
 if !(clj-kondo --lint $@)
