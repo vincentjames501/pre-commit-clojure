@@ -1,6 +1,6 @@
 # Clojure hooks for pre-commit
 
-[Clojure](https://clojure.org/) package for [pre-commit](https://pre-commit.com) hooks.
+[Clojure](https://clojure.org/) package for [pre-commit](https://pre-commit.com) hooks. Integrates with popular packages such as [clj-kondo](https://github.com/clj-kondo/clj-kondo).
 
 ## Usage with pre-commit
 
