@@ -6,7 +6,7 @@
 
 ```yaml
 -   repo: https://github.com/vincentjames501/pre-commit-clojure
-    rev: main
+    rev: v1.x
     hooks:
     -   id: clj-kondo
 ```
@@ -15,7 +15,7 @@
 
 ```yaml
 -   repo: https://github.com/vincentjames501/pre-commit-clojure
-    rev: main
+    rev: v1.x
     hooks:
     -   id: clj-kondo
         args: ['--fail-level']

@@ -4,3 +4,4 @@
   types: [clojure]
   entry: hooks/clj-kondo-pre-commit
   language: script
+  require_serial: true
