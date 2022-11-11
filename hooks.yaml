@@ -5,3 +5,10 @@
   entry: hooks/clj-kondo-pre-commit
   language: script
   require_serial: true
+- id: zprint
+  name: format with zprint
+  description: Format files using zprint
+  types: [clojure]
+  entry: hooks/zprint-pre-commit
+  language: script
+  require_serial: false
