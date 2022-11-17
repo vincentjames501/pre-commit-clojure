@@ -5,6 +5,7 @@
   entry: hooks/clj-kondo-pre-commit
   language: script
   require_serial: true
+  args: ["warning"]
 - id: zprint
   name: format with zprint
   description: Format files using zprint
