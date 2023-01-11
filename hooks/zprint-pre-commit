@@ -6,4 +6,11 @@ then
     exit 2
 fi
 
-zprint -w $@
+result=$(zprint -fw $@ 2>&1)
+
+if [ -z "$result" ]; then
+    exit 0;
+else
+    echo $result
+    exit 1;
+fi
