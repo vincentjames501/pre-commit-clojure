@@ -1,6 +1,6 @@
 # Clojure hooks for pre-commit
 
-[Clojure](https://clojure.org/) package for [pre-commit](https://pre-commit.com) hooks. Integrates with popular packages such as [clj-kondo](https://github.com/clj-kondo/clj-kondo).
+[Clojure](https://clojure.org/) package for [pre-commit](https://pre-commit.com) hooks. Integrates with popular packages such as [clj-kondo (static linter)](https://github.com/clj-kondo/clj-kondo), [kaocha (unit testint)](https://github.com/lambdaisland/kaocha), and [zprint (file formatting)](https://github.com/kkinnear/zprint).
 
 ## Usage with pre-commit
 
