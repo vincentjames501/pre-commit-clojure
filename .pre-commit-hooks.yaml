@@ -5,3 +5,19 @@
   entry: hooks/clj-kondo-pre-commit
   language: script
   require_serial: true
+  args: ["warning"]
+- id: zprint
+  name: format with zprint
+  description: Format files using zprint
+  types: [clojure]
+  entry: hooks/zprint-pre-commit
+  language: script
+  require_serial: false
+- id: kaocha
+  name: run tests
+  description: Run kaocha tests
+  types: [clojure]
+  entry: hooks/kaocha-pre-commit
+  language: script
+  pass_filenames: false
+  require_serial: false

@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+if ! command -v zprint &> /dev/null
+then
+    echo "zprint could not be found. Please follow the installation instructions here https://github.com/kkinnear/zprint/blob/main/doc/using/files.md"
+    exit 2
+fi
+
+result=$(zprint -fw $@ 2>&1)
+
+if [ -z "$result" ]; then
+    exit 0;
+else
+    echo $result
+    exit 1;
+fi

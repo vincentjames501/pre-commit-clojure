@@ -6,7 +6,12 @@ then
     exit 2
 fi
 
-if !(clj-kondo --lint $@)
+array=( $@ )
+len=${#array[@]}
+_level=${1}
+_files=${array[@]:1:$len}
+
+if !(clj-kondo --fail-level $_level --lint $_files)
 then
     echo
     echo "Error: new clj-kondo errors found. Please fix them and retry the commit."
